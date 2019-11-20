@@ -136,6 +136,7 @@ public:
         for (int i = 0; i < Xs; ++i) {
             for (int j = 0; j < Ys; ++j) {
                 T newval = (*this)(i,j) + other(i,j);
+                // No es la manera más eficiente
                 AnsMatrix.set(i,j,newval);
             }
         }
@@ -147,6 +148,7 @@ public:
         for (int i = 0; i < Xs; ++i) {
             for (int j = 0; j < Ys; ++j) {
                 T newval = (*this)(i,j) - other(i,j);
+                // No es la manera más eficiente
                 AnsMatrix.set(i,j,newval);
             }
         }
